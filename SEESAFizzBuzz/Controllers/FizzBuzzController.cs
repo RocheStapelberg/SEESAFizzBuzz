@@ -16,7 +16,7 @@ namespace SEESAFizzBuzz.Controllers
 
             try
             {
-                for (int i = 1; i < range; i++)
+                for (int i = 1; i <= range; i++)
                 {
                     if (i % 3 == 0 && i % 5 == 0)
                     {
