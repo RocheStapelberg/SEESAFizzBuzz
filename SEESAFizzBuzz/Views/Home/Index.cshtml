@@ -4,4 +4,9 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
+    <form asp-action="ShowFizzBuzz">
+        <p><label for="range">Insert Range of FizzBuzz:</label>
+            <input type="number" name="range" placeholder="100" required/></p>
+        <p><input type="submit" value="FizzBuzz" class="btn btn-primary"/></p>
+    </form>
 </div>

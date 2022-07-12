@@ -1,0 +1,33 @@
+﻿@*Display page for Fizzbuzz*@
+@model List<string>
+<h1>FizzBuzz</h1>
+@{
+    // Printing FizzBuzz
+    foreach (var item in Model)
+    {
+        if (item == "Fizz")
+        {
+            <p style="color:#5A9E70">
+                @item
+            </p>
+        }
+        else if (item == "Buzz")
+        {
+            <p style="color:#328DD2">
+                @item
+            </p>
+        }
+        else if (item == "FizzBuzz")
+        {
+            <p style="color:#F48224">
+                @item
+            </p>
+        }
+        else
+        {
+            <p>
+                @item
+            </p>
+        }
+    }
+}
